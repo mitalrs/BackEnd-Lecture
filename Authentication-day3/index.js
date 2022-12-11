@@ -1,6 +1,6 @@
 //import the express package
 const express = require("express"); 
-const routes = require("./routes/authRoutes.js");
+const routes = require("./routers/authRouters.js");
 
 const app =  express(); //express pkg return a function 
 
