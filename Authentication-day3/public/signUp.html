@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignIn</title>
+</head>
+<body>
+   <div>
+  <h3>Tis is signIn</h3>
+     <br/>
+
+   <lable for="email"><b>Email</b></lable>
+  <input
+    type="text"
+    placeholder="email@gmail.com"
+    name="email"
+    required
+    id="email"/>
+
+  <lable for="psw"><b>Password</b></lable>
+  <input
+    type="text"
+    placeholder="enter right password"
+    name="psw"
+    required
+    id="password"/>
+
+  <div class="clearfix">
+    <button type="submit" id="sign-in-btn">Sign In</button>
+  </div>
+  <hr/>
+  <p>Want to create account? <a href="./signUp.html">SignUp</a></p>
+</div>
+<script>
+    let signInSubmitButton = document.querySelector
+("#sign-in-btn");
+  let email = document.getElementById("email");
+  let pwd = document.getElementById("password");
+
+  signInSubmitButton.addEventListener("click", async ()=>{
+    let user = {
+      email: email.value,
+      password: pwd.value,
+    };
+    console.log(user);
+
+    //https://nodejs-authentication.mitalsapkale1.repl.co/signIn.html
+    let request = await fetch("https://nodejs-authentication.mitalsapkale1.repl.co/api/v1/signin", {
+      method: "POST",
+      haeders: {
+        "Content-Type": "application/json",
+      },
+      crossDomain: true,
+      body: JSON.stringify(user),
+    });
+    let message = await request.text();
+
+    console.log(message);
+     alert(message);
+  });
+</script>
+</body>
+</html>
+<!-- https://nodejs-authentication.mitalsapkale1.repl.co/signIn.html -->
