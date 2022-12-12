@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp</title>
+</head>
+<body>
+  <div>
+  <h3>Tis is signUp</h3>
+  <p>fill the detail</p>
+  <br/>
+
+  <lable for="name"><b>Name</b></lable>
+  <input
+    type="text"
+    placeholder="lastName firstName"
+    name="name"
+    required
+    id="name"/>
+
+   <lable for="email"><b>Email</b></lable>
+  <input
+    type="text"
+    placeholder="email@gmail.com"
+    name="email"
+    required
+    id="email"/>
+
+  <lable for="psw"><b>Password</b></lable>
+  <input
+    type="text"
+    placeholder="enter right password"
+    name="psw"
+    required
+    id="psw"/>
+
+  <div class="clearfix">
+    <button type="submit" class="signupbtn" id="sign-up-btn">Sign Up</button>
+  </div>
+  <hr/>
+  <p>Aready have an account? <a href="./signIn.html">SignIn</a></p>
+</div>
+  <script>
+    let signUpSubmitButton = document.querySelector('#sign-up-btn');
+    let name = document.getElementById('name');
+    let email=document.getElementById('email');
+    let psw = document.getElementById('psw');
+
+    signUpSubmitButton.addEventListener('click', async ()=>{
+      let user ={
+        name: name.value,
+        email: email.value,
+        password: psw.value,
+      };
+      console.log(user);
+
+      let request = await fetch("http://localhost:4000/api/v1/signup",{
+  method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        crossDomain: true,
+        body: JSON.stringify(user),
+      });
+      console.log(request)
+      let message = await request.text();
+      console.log(message);
+      alert(message);
+    });
+  </script>
+</body>
+</html>
