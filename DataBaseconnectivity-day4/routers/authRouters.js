@@ -1,9 +1,16 @@
 const express = require("express"); 
 const router = express.Router();
 const bcrypt = require("bcrypt");
-const {validateName,
+const createDB = require("../config/db")
+const {
+  validateName,
   validateEmail,
-  validatePassword} = require("../utils/validator.js");
+  validatePassword
+} = require("../utils/validator.js");
+
+createDB.sync().then(()=>{
+  console.log("DB is rinning");
+});
 
 let users ={}
 router.post("/signup", async (req,res)=>{
