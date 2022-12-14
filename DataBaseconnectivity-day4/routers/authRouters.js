@@ -28,16 +28,16 @@ router.post("/signup", async (req,res)=>{
     });
 
     if(userExist){
-      res.send("user exists")
+      return res.send("user exists")
     }
     if(!validateName(name)){
-      res.send("Invalid name");
+      return res.send("Invalid name");
     }
     if(!validateEmail(email)){
-      res.send("Invalid email");
+      return res.send("Invalid email");
     }
     if(!validatePassword(password)){
-      res.send("Invalid password");
+      return res.send("Invalid password");
     }
 
     const Epassword = await bcrypt.hash(password, 10);
@@ -57,7 +57,7 @@ router.post("/signup", async (req,res)=>{
     // console.log(User[email]);
     return res.send(createdUser);
   } catch(e){
-    res.send(e);
+    return res.send(e);
   }
 })
 
@@ -74,7 +74,7 @@ router.post("/signin", async (req,res)=>{
     
 // console.log(users[email]);
     if(!userExist){
-      res.send("user does not exist");
+      return res.send("user does not exist");
     }
 
     const newPassword = userExist.dataValues.password;
@@ -82,7 +82,7 @@ router.post("/signin", async (req,res)=>{
     const passMatch = await bcrypt.compare(password, newPassword);
 
     if(!passMatch){
-      res.send("password missmatch");
+      return res.send("password missmatch");
     }
     res.send("success");
   }catch(e){
