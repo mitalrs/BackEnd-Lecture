@@ -30,7 +30,7 @@
 
 
 
-### git commands:
+### general commands:
 1. a utility tool to review and read a history of everything that happens to a repository.
     > git log
 
@@ -67,7 +67,7 @@
 
 
 
-### branching
+### branching command
 1. creating a branch and checkout on created branch(checkout for switch and -b for create a new branch)
    > git checkout -b "branchName"
 
@@ -77,6 +77,15 @@
   *iii feature: A feature branch is a temporary branch used for development or testing purposes.*
   *iv bug: branches for bug fixes that are going into a planned upcoming release should be in feature branches.* 
 
+2. To merge branches locally, use git checkout to switch to the branch you want to merge into. This branch is typically the main branch. Next, use git merge and specify the name of the other branch to bring into this branch.
+   > git merge "branch_name"
+   - after the marging need commit
+   > git commit 
+
+
+- gitHub
+- gitLab
+- bitbucket
 
 
 
