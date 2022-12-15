@@ -22,6 +22,13 @@ solution with Github
  img
 
 
+#### For this feature, GitHub have own rules:
+- install Git -> Install my software in your project
+- commits -> when your project ready to save make commits for save this perticular project
+- push -> after commit and you want to push this code on server for the record make
+- pull -> when some one code pushed on Github, you want to update this code in your local to. so, pull it and add your local too.
 
 
-  
+
+#### create git repository:
+create folder in your local 
