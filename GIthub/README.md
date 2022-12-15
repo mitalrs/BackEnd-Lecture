@@ -58,9 +58,24 @@
        > git config --global user.email "MY_NAME@example.com"
 
 8. used to upload local repository content to a remote repository
-   > git push
+     > git push
    - push your code into the master branch
-   > git push origin
+     > git push origin
+
+9. In order to hard reset to the commit right before HEAD, use “git reset” with the “–hard” option and specify HEAD^.(deleted the previous commit).
+  > git reset --hard "COMMIT_ID"
+
+
+
+### branching
+1. creating a branch and checkout on created branch(checkout for switch and -b for create a new branch)
+   > git checkout -b "branchName"
+
+*There are 4 type of branching*
+  *i release: Release branches are used for release task and long-term maintenance of software versions.*
+  *ii hotfix: Maintenance or “hotfix” branches are used to quickly patch production releases. Hotfix branches are a lot like release branches and feature branches except they're based on main instead of develop.*
+  *iii feature: A feature branch is a temporary branch used for development or testing purposes.*
+  *iv bug: branches for bug fixes that are going into a planned upcoming release should be in feature branches.* 
 
 
 
