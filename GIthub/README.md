@@ -31,7 +31,8 @@
 
 
 ### git commands:
-1. 
+1. a utility tool to review and read a history of everything that happens to a repository.
+    > git log
 
 2. inialize for git folder with the this command: this command created a folder that's a created by git by default
     > git init
@@ -55,5 +56,12 @@
        > git config --global user.name "FIRST_NAME LAST_NAME"
    - Set your email address
        > git config --global user.email "MY_NAME@example.com"
+
+8. used to upload local repository content to a remote repository
+   > git push
+   - push your code into the master branch
+   > git push origin
+
+
 
 
