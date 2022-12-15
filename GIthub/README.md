@@ -65,6 +65,9 @@
 9. In order to hard reset to the commit right before HEAD, use “git reset” with the “–hard” option and specify HEAD^.(deleted the previous commit).
   > git reset --hard "COMMIT_ID"
 
+10. 
+  > git clone
+
 
 
 ### branching command
@@ -82,10 +85,30 @@
    - after the marging need commit
    > git commit 
 
+3. 
+   > git fetch origin "BRANCH_NAME"
+
 
 - gitHub
 - gitLab
 - bitbucket
+
+##### conflicts
+<br>
+Git can handle most merges on its own with automatic merging features. A conflict arises when two separate branches have made edits to the same line in a file, or when a file has been deleted in one branch but edited in the other. Conflicts will most likely happen when working in a team environment.
+<br>
+   img
+
+<<<<<<<<<<<<<
+*the older code*
+=============
+*new changes are override*
+>>>>>>>>>>>>>>
+
+
+
+
+
 
 
 
