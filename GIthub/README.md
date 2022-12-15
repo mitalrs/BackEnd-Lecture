@@ -31,9 +31,10 @@
 
 
 #### git commands:
-1. create folder in your local 
+1. 
+
 2. inialize for git folder with the this command: this command created a folder that's a created by git by default
-       > git init
+    > git init
     
 3. git commit -a. Commit a snapshot of all changes in the working directory.
        > git commit
@@ -41,13 +42,13 @@
        >  git commit -m "commit message"
 
 4. displays the state of the working directory and the staging area.
-       > git status
+    > git status
 
 5. Show changes between commits, commit and working tree, etc
-       > git diff
+    > git diff
 
 6. adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. 
-       > git add .
+    > git add .
 
 7. You typically configure your global username and email address after installing Git.
    - Set your username
