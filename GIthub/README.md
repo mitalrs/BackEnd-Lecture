@@ -1,11 +1,11 @@
-## Github
+# Github
 
-#### The problem was facing without GitHub:
+### The problem was facing without GitHub:
 1. Sharing the code
 2. versionig(Controlling the versions it's difficult)
 3. Merging code
 
-##### solution with Github
+#### solution with Github
 1. **Sharing the code:**
   - if two more people want to share there code and collaborate for the project, they will do with GitHub.
   - GitHub stored the code and give the chance to implement this code when they want and give the same authority for all they will have access
@@ -22,7 +22,7 @@
  img
 
 
-#### For this feature, GitHub have own rules:
+### For this feature, GitHub have own rules:
 - install Git -> Install my software in your project
 - commits -> when your project ready to save make commits for save this perticular project
 - push -> after commit and you want to push this code on server for the record make
@@ -30,7 +30,7 @@
 
 
 
-#### git commands:
+### git commands:
 1. 
 
 2. inialize for git folder with the this command: this command created a folder that's a created by git by default
