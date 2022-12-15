@@ -30,5 +30,25 @@ solution with Github
 
 
 
-#### create git repository:
-create folder in your local 
+#### git commands:
+1. create folder in your local 
+2. inialize for git folder with the this command:
+   > git init
+    this command created a folder that's a created by git by default
+3. git commit -a. Commit a snapshot of all changes in the working directory.
+   > git commit
+   - A shortcut command that immediately creates a commit with a passed commit message.
+   >  git commit -m "commit message"
+4. displays the state of the working directory and the staging area.
+   > git status
+5. Show changes between commits, commit and working tree, etc
+   > git diff
+6. adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. 
+   > git add .
+7. You typically configure your global username and email address after installing Git.
+   - Set your username
+   > git config --global user.name "FIRST_NAME LAST_NAME"
+   - Set your email address
+   > git config --global user.email "MY_NAME@example.com"
+
+
