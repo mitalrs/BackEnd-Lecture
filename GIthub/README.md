@@ -10,7 +10,8 @@
   - if two more people want to share there code and collaborate for the project, they will do with GitHub.
   - GitHub stored the code and give the chance to implement this code when they want and give the same authority for all they will have access
   img
-  ![sharingcode.png](/image/sharingcode.png)
+  <br>
+  ![sharingcode.png](./image/sharingcode.png)
 
 2. **versionig:**
  - If we want to mantain applications with version of code and feature.
