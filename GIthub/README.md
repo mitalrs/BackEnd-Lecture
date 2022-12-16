@@ -71,57 +71,62 @@
 7. You typically configure your global username and email address after installing Git.
    - Set your username
        ```console
-   ~$git config --global user.name "FIRST_NAME LAST_NAME"   
-    ```
+        ~$git config --global user.name "FIRST_NAME LAST_NAME"   
+       ```
    - Set your email address
        ```console
-   ~$git config --global user.email "MY_NAME@example.com"   
-    ```
+        ~$git config --global user.email "MY_NAME@example.com"   
+       ```
 
 8. used to upload local repository content to a remote repository
-     > git push
-   - push your code into the master branch
      ```console
-   ~$git push origin    
+      ~$git push    
+     ```
+   - push your code into the master branch
+    ```console
+       ~$git push origin    
     ```
 
 9. In order to hard reset to the commit right before HEAD, use “git reset” with the “–hard” option and specify HEAD^.(deleted the previous commit).
-  ```console
-   ~$git reset --hard "COMMIT_ID"    
-    ```
+   ```console
+     ~$git reset --hard "COMMIT_ID"    
+   ```
 
 10. primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location
-  ```console
-   ~$git clone    
-    ```
+   ```console
+     ~$git clone    
+   ```
 
 
 
 ### branching command
 1. creating a branch and checkout on created branch(checkout for switch and -b for create a new branch)
-   ```console
-   ~$git checkout -b "branchName"   
+    ```console
+     ~$git checkout -b "branchName"   
     ```
 
-*There are 4 type of branching*
-  *i release: Release branches are used for release task and long-term maintenance of software versions.*
-  *ii hotfix: Maintenance or “hotfix” branches are used to quickly patch production releases. Hotfix branches are a lot like release branches and feature branches except they're based on main instead of develop.*
-  *iii feature: A feature branch is a temporary branch used for development or testing purposes.*
+**_There are 4 type of branching_**
+
+  *i release:- Release branches are used for release task and long-term maintenance of software versions.*
+
+  *ii hotfix:- Maintenance or “hotfix” branches are used to quickly patch production releases. Hotfix branches are a lot like release branches and feature branches except they're based on main instead of develop.*
+
+  *iii feature:- A feature branch is a temporary branch used for development or testing purposes.*
   *iv bug: branches for bug fixes that are going into a planned upcoming release should be in feature branches.* 
 
 2. To merge branches locally, use git checkout to switch to the branch you want to merge into. This branch is typically the main branch. Next, use git merge and specify the name of the other branch to bring into this branch.
-   ```console
-   ~$git merge "branch_name"  
+    ```console
+      ~$git merge "branch_name"  
     ```
    - after the marging need commit
-   ```console
-   ~$git commit    
+    ```console
+       ~$git commit    
     ```
 
 3. clone the Git remote repository to the local repository and run the “$ git fetch origin” command to fetch the remote branches.
    ```console
-   ~$git fetch origin "BRANCH_NAME"    
-    ```
+     ~$git fetch origin "BRANCH_NAME"    
+   ```
 
 
 - gitHub
