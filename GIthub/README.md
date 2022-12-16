@@ -11,7 +11,8 @@
   - GitHub stored the code and give the chance to implement this code when they want and give the same authority for all they will have access
   <br>
   <!-- ![sharingcode.png](image/sharingcode.png) -->
-  ![<img src="sharingcode.png" width="250"/>](image/sharingcode.png)
+  <!-- ![<img src="sharingcode.png" width="250"/>](image/sharingcode.png) -->
+  <img src="image/sharingcode.png" alt="sharingcode.png" width="200"/>
 
    
    <br>
