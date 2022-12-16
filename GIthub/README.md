@@ -35,7 +35,7 @@
 
 ### general commands:
 1. a utility tool to review and read a history of everything that happens to a repository.
-    > git log
+    ``` git log ```
 
 2. inialize for git folder with the this command: this command created a folder that's a created by git by default
     > git init
