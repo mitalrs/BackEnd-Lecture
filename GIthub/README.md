@@ -102,11 +102,13 @@ Git can handle most merges on its own with automatic merging features. A conflic
 <br>
   <img src="image/branching.png" alt="sharingcode.png" width="400"/>
 
+```
 <<<<<<<<<<<<<
 *the older code*
 =============
 *new changes are override*
 >>>>>>>>>>>>>>
+```
 
 
 
