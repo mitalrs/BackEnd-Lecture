@@ -35,50 +35,73 @@
 
 ### general commands:
 1. a utility tool to review and read a history of everything that happens to a repository.
-   >  ```
-       git log   
-       
-        ```
+    ```console
+   ~$git log    
+    ```
 
-2. inialize for git folder with the this command: this command created a folder that's a created by git by default
-    > git init
+2. inialize for git folder with the this command: this command created a folder that's a created by git by default 
+    ```console
+   ~$git init   
+    ```
     
 3. git commit -a. Commit a snapshot of all changes in the working directory.
-       > git commit
+       ```console
+   ~$git commit   
+    ```
    - A shortcut command that immediately creates a commit with a passed commit message.
-       >  git commit -m "commit message"
+       ```console
+   ~$ git commit -m "commit message"   
+    ```
 
 4. displays the state of the working directory and the staging area.
-    > git status
+    ```console
+   ~$git status    
+    ```
 
 5. Show changes between commits, commit and working tree, etc
-    > git diff
+    ```console
+   ~$git diff  
+    ```
 
-6. adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. 
-    > git add .
+6. adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit.
+    ```console
+   ~$git add .   
+    ```
 
 7. You typically configure your global username and email address after installing Git.
    - Set your username
-       > git config --global user.name "FIRST_NAME LAST_NAME"
+       ```console
+   ~$git config --global user.name "FIRST_NAME LAST_NAME"   
+    ```
    - Set your email address
-       > git config --global user.email "MY_NAME@example.com"
+       ```console
+   ~$git config --global user.email "MY_NAME@example.com"   
+    ```
 
 8. used to upload local repository content to a remote repository
      > git push
    - push your code into the master branch
-     > git push origin
+     ```console
+   ~$git push origin    
+    ```
 
 9. In order to hard reset to the commit right before HEAD, use “git reset” with the “–hard” option and specify HEAD^.(deleted the previous commit).
-  > git reset --hard "COMMIT_ID"
+  ```console
+   ~$git reset --hard "COMMIT_ID"    
+    ```
 
-10. 
-  > git clone
+10. primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location
+  ```console
+   ~$git clone    
+    ```
 
 
 
 ### branching command
 1. creating a branch and checkout on created branch(checkout for switch and -b for create a new branch)
-   > git checkout -b "branchName"
+   ```console
+   ~$git checkout -b "branchName"   
+    ```
 
 *There are 4 type of branching*
   *i release: Release branches are used for release task and long-term maintenance of software versions.*
@@ -87,12 +110,18 @@
   *iv bug: branches for bug fixes that are going into a planned upcoming release should be in feature branches.* 
 
 2. To merge branches locally, use git checkout to switch to the branch you want to merge into. This branch is typically the main branch. Next, use git merge and specify the name of the other branch to bring into this branch.
-   > git merge "branch_name"
+   ```console
+   ~$git merge "branch_name"  
+    ```
    - after the marging need commit
-   > git commit 
+   ```console
+   ~$git commit    
+    ```
 
-3. 
-   > git fetch origin "BRANCH_NAME"
+3. clone the Git remote repository to the local repository and run the “$ git fetch origin” command to fetch the remote branches.
+   ```console
+   ~$git fetch origin "BRANCH_NAME"    
+    ```
 
 
 - gitHub
