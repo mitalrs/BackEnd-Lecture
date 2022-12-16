@@ -9,8 +9,6 @@
 1. **Sharing the code:**
   - if two more people want to share there code and collaborate for the project, they will do with GitHub.
   - GitHub stored the code and give the chance to implement this code when they want and give the same authority for all they will have access
-  <!-- ![sharingcode.png](image/sharingcode.png) -->
-  <!-- ![<img src="sharingcode.png" width="250"/>](image/sharingcode.png) -->
   <img src="image/sharingcode.png" alt="sharingcode.png" width="400"/>
 
    
@@ -18,12 +16,13 @@
 2. **versionig:**
  - If we want to mantain applications with version of code and feature.
  - It's done with github, Github maintain a code with a commits
- img
+  <img src="image/versioning.png" alt="sharingcode.png" width="400"/>
 
+   <br>
 3. **Merging code:**
  - If two or more people work on same project we need to marge it and exchange the new changes as well.
  - GitHub also take care of this feature, GitHub maintain the code and allow to get the code in your local and post back.
- img
+  <img src="image/marging.png" alt="sharingcode.png" width="400"/>
 
 
 ### For this feature, GitHub have own rules:
