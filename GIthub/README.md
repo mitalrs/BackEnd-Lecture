@@ -11,7 +11,7 @@
   - GitHub stored the code and give the chance to implement this code when they want and give the same authority for all they will have access
   img
   <br>
-  ![sharingcode.png](/Github/image/sharingcode.png)
+  ![sharingcode.png](image/sharingcode.png)
 
 2. **versionig:**
  - If we want to mantain applications with version of code and feature.
