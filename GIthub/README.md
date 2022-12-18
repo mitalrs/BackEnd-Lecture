@@ -147,7 +147,8 @@ Git can handle most merges on its own with automatic merging features. A conflic
 >>>>>>>>>>>>>>
 ```
 
-
+### For more about git:
+<a href="https://git-scm.com/docs/git">Git Doc</a>
 
 
 
