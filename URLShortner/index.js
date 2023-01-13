@@ -9,11 +9,11 @@ app.use(express.json()); // it's basically accept application/json for express s
 app.use(express.static("public")); // we are put ower html in to public folder
 app.use(express.urlencoded({ extended: false })); //u can accept req.body
 
-const PORT = 1337;
+const PORT = 2020;
 
 app.use('/urlapi',shorturl);
 app.use('/', homeRoutes);
 
-app.listen(POST,()=>{
+app.listen(PORT,()=>{
     console.log("app is runnig on port: ", PORT);
 })
