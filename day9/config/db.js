@@ -1,12 +1,12 @@
 const { Sequelize } = require('sequelize');
 
-const createDB = new Sequelize('test-db', 'user', 'pass', {
+const createdDB = new Sequelize('test-db', 'user', 'pass', {
     dialect: 'sqlite',
     host: './config/db.sqlite'
 });
 
 const connectedDB = () =>{
-    createDB.sync().then(()=>{
+    createdDB.sync().then(()=>{
         console.log('connected to db');
     })
     .catch((e)=>{
@@ -14,4 +14,4 @@ const connectedDB = () =>{
     })
 }
 
-module.exports = { createDB, connectedDB };
+module.exports = { createdDB, connectedDB };

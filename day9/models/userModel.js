@@ -16,3 +16,5 @@ const User = createdDB.define("users", {
         defaultValue: false
     }
 });
+
+module.exports = User; 

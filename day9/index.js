@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const { connectedDB } = require('./config/db');
-const userRoutes = require('./routes/user');
+const userRoutes = require('./routers/user');
 
 //middleware
 app.use(express.json());
